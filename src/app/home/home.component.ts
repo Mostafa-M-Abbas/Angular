@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
 import { NavbarComponent } from "../navbar/navbar.component";
 import { FooterComponent } from "../footer/footer.component";
+import { AboutComponent } from "../about/about.component";
+import { ContactUsComponent } from "../contact-us/contact-us.component";
+import { ProductsComponent } from "../products/products.component";
 interface Product {
   imgUrl: string;
   productName: string;
@@ -10,7 +13,7 @@ interface Product {
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [NavbarComponent, FooterComponent],
+  imports: [NavbarComponent, FooterComponent, AboutComponent, ContactUsComponent, ProductsComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
 })
