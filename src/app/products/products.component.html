@@ -1,0 +1,32 @@
+<h2 class="text-center">Top jewelry Products</h2>
+<div class="row" style="">
+  @for(item of topCatProducts ; track $index){
+  <div class="col-md-3">
+    <img [src]="item.image" class="w-100" />
+    <h2>{{ item.title }}</h2>
+    <!-- <p>{{ item.description }}</p> -->
+    <p class="text-primary">Price is {{ item.category }}</p>
+
+    <p class="text-primary">Price is {{ item.price }}</p>
+
+    <p class="text-primary">Price is {{ item.price }}</p>
+  </div>
+  }
+</div>
+@defer{
+<div class="row" style="">
+  @for(item of products ; track $index){
+  <div class="col-clsmd-3">
+    <img [src]="item.image" class="w-100" />
+    <h2>{{ item.title }}</h2>
+    <!-- <p>{{ item.description }}</p> -->
+    <p class="text-primary">Price is {{ item.category }}</p>
+
+    <p class="text-primary">Price is {{ item.price }}</p>
+
+    <p class="text-primary">Price is {{ item.price }}</p>
+  </div>
+  }
+</div>
+
+}
